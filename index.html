@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stix</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #1b2838;
+            color: #fff;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #16202d;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            left: -250px; /* Панель прихована */
+            transition: 0.4s ease-in-out;
+        }
+
+        .sidebar:hover {
+            left: 0; /* З’являється при наведенні */
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 22px;
+            color: #66c0f4;
+            padding: 15px 0;
+            border-bottom: 1px solid #66c0f4;
+            width: 100%;
+        }
+
+        .sidebar nav a {
+            color: #66c0f4;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar nav a:hover {
+            background: #66c0f4;
+            color: #000;
+        }
+
+        .friends {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .content {
+            margin-left: 20px; /* Компенсує приховану панель */
+            width: calc(100% - 20px);
+            padding: 30px;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 20, 20, 0.9)), 
+                        url('https://i.pinimg.com/736x/e0/1e/fb/e01efbc7ddcacbf849b0280534714a92.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 10px;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background: #16202d;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+            transition: 0.3s;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .game-card h4 {
+            font-size: 16px;
+            margin: 8px 0;
+            text-shadow: 2px 2px 0px #000;
+            color: #66c0f4;
+        }
+
+        .game-card p {
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="site-title">Stix</div>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="games.html">🎮 Games</a> 
+            <a href="community.html">💬 Community</a>
+            <a href="news.html">📢 News</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+
+
+        <div class="friends">
+            <p>Friends Online: <span class="online-count">5</span></p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="banner">
+            <h2>Find Your Next Game</h2>
+        </div>
+
+        <div class="game-grid">
+            <div class="game-card">
+                <a href="Elden_Ring.html">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1744748041" alt="Elden Ring">
+                <h4>Elden Ring</h4>
+                <p>$59.99</p>
+                </a>
+            </div>
+
+            <div class="game-card">
+                <a href="Skyrim.html">
+                <img src="https://img3.akspic.ru/crops/4/9/6/5/15694/15694-temnota-mifologia-polnoch-vymiranie-tamriel-1920x1080.jpg" alt="Skyrim">
+                <h4>Skyrim</h4>
+                <p>$49.99</p>
+                </a>
+            </div>
+
+            <div class="game-card">
+                <a href="Diablo_3.html">
+                <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/2m/2M8QRV55TNGM1744065821014.png" alt="Diablo 3">
+                <h4>Diablo_3</h4>
+                <p>$39.99</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

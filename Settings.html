@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stix - Settings</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #1b2838;
+            color: #fff;
+        }
+
+        .header {
+            background: #16202d;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #66c0f4;
+        }
+
+        .settings-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .setting-option {
+            background: #16202d;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .setting-option:hover {
+            background: #1f2e3c;
+        }
+
+        .setting-option label {
+            font-size: 16px;
+            color: #66c0f4;
+        }
+
+        .setting-option input {
+            cursor: pointer;
+        }
+
+        .theme-switch {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .theme-switch button {
+            background: #66c0f4;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .theme-switch button:hover {
+            background: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Settings</div>
+
+    <div class="settings-container">
+        <div class="setting-option">
+            <label for="dark-mode">Enable Dark Mode</label>
+            <input type="checkbox" id="dark-mode">
+        </div>
+
+        <div class="setting-option">
+            <label for="notifications">Enable Notifications</label>
+            <input type="checkbox" id="notifications">
+        </div>
+
+        <div class="setting-option">
+            <label for="sound">Enable Sound Effects</label>
+            <input type="checkbox" id="sound">
+        </div>
+
+        <div class="theme-switch">
+            <button onclick="alert('Theme changed!')">Change Theme</button>
+        </div>
+    </div>
+
+</body>
+</html>
