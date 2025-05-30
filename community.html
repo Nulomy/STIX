@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stix - Community</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #1b2838;
+            color: #fff;
+        }
+
+        .header {
+            background: #16202d;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #66c0f4;
+        }
+
+        .forum-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .category-btn {
+            background: #16202d;
+            border: 2px solid #66c0f4;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .category-btn:hover {
+            background: #66c0f4;
+            color: #000;
+        }
+
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .post {
+            background: #16202d;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .post:hover {
+            background: #1f2e3c;
+        }
+
+        .post h4 {
+            font-size: 18px;
+            color: #66c0f4;
+        }
+
+        .post p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Community</div>
+
+    <div class="forum-categories">
+        <button class="category-btn">General Discussion</button>
+        <button class="category-btn">Game Updates</button>
+        <button class="category-btn">Help & Support</button>
+    </div>
+
+    <div class="post-list">
+        <div class="post">
+            <h4>New Elden Ring DLC Announced!</h4>
+            <p>Players are excited for the next big expansion. What do you think?</p>
+        </div>
+
+        <div class="post">
+            <h4>Best Mods for Skyrim?</h4>
+            <p>Share your favorite mods and improvements for the legendary RPG!</p>
+        </div>
+
+        <div class="post">
+            <h4>Diablo 3 Season Update</h4>
+            <p>What's your favorite build for the new season? Let’s discuss strategies!</p>
+        </div>
+    </div>
+
+</body>
+</html>
