@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrim - Stix</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #0b0c10;
+            color: #c5c6c7;
+            text-align: center;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            left: -250px;
+            transition: 0.4s ease-in-out;
+            border-right: 2px solid #66fcf1; /* Неоновий бірюзовий */
+            box-shadow: 0px 0px 20px rgba(102, 252, 241, 0.5);
+        }
+
+        .sidebar:hover {
+            left: 0;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 22px;
+            color: #66fcf1;
+            padding: 15px 0;
+            border-bottom: 1px solid #66fcf1;
+            width: 100%;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .sidebar nav a {
+            color: #66fcf1;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-shadow: 0px 0px 5px #66fcf1;
+        }
+
+        .sidebar nav a:hover {
+            background: #66fcf1;
+            color: black;
+            box-shadow: 0px 0px 10px #66fcf1;
+        }
+
+        .content {
+            margin-left: 20px;
+            padding: 30px;
+            width: calc(100% - 20px);
+        }
+
+        .header {
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            font-size: 24px;
+            color: #66fcf1;
+            border-bottom: 2px solid #66fcf1;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .game-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .game-banner {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .description {
+            background: #1f2833;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: left;
+            border: 2px solid #ff0066;
+        }
+
+        .trailer {
+            margin-top: 20px;
+        }
+
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .screenshots img {
+            width: 30%;
+            border-radius: 6px;
+        }
+
+        .buy-button {
+            background: #66fcf1;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .buy-button:hover {
+            background: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="site-title">Stix</div>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="games.html">🎮 Games</a>
+            <a href="community.html">💬 Community</a>
+            <a href="news.html">📢 News</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+    </div>
+
+
+    <div class="content">
+        <div class="header">Skyrim</div>
+
+        <div class="game-container">
+            <img class="game-banner" src="https://img3.akspic.ru/crops/4/9/6/5/15694/15694-temnota-mifologia-polnoch-vymiranie-tamriel-1920x1080.jpg" alt="Skyrim">
+
+            <div class="description">
+                <h3>About Skyrim</h3>
+                <p>The Elder Scrolls V: Skyrim is an open-world action RPG where players explore the legendary lands of Tamriel.
+                   Battle dragons, master powerful magic, and shape your own destiny in a vast, ever-changing world.</p>
+            </div>
+
+            <div class="trailer">
+                <h3>Gameplay Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Fpj69DjvbAg" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="screenshots">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5dtN71nNyDzjaKyrSgXnzBMe0JYSAYoBzQ&s" alt="Screenshot 1">
+                <img src="https://nvplay.ru/uploads/images/News/2016/11.04/SkyrimSE-01-big.jpg" alt="Screenshot 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOodyWh2kTiCBl_xT9KU7gkiTUXxJxpsbMYA&s" alt="Screenshot 3">
+            </div>
+
+            <button class="buy-button">Buy Skyrim - $49.99</button>
+        </div>
+    </div>
+
+</body>
+</html>

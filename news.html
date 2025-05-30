@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stix - News</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #0b0c10; /* Темний чорний */
+            color: #c5c6c7; /* Світло-сірий */
+        }
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            left: -250px;
+            transition: 0.4s ease-in-out;
+            border-right: 2px solid #66fcf1; /* Неоновий бірюзовий */
+            box-shadow: 0px 0px 20px rgba(102, 252, 241, 0.5);
+        }
+
+        .sidebar:hover {
+            left: 0;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 22px;
+            color: #66fcf1;
+            padding: 15px 0;
+            border-bottom: 1px solid #66fcf1;
+            width: 100%;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .sidebar nav a {
+            color: #66fcf1;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-shadow: 0px 0px 5px #66fcf1;
+        }
+
+        .sidebar nav a:hover {
+            background: #66fcf1;
+            color: black;
+            box-shadow: 0px 0px 10px #66fcf1;
+        }
+
+
+        .header {
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #66fcf1;
+            border-bottom: 2px solid #66fcf1;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .news-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .news-item {
+            background: #1f2833;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+            border: 2px solid #ff0066; /* Неоновий рожевий */
+            margin-bottom: 15px;
+        }
+
+        .news-item:hover {
+            background: #ff0066;
+            box-shadow: 0px 0px 15px #ff0066;
+        }
+
+        .news-item h4 {
+            font-size: 18px;
+            color: #45a29e; /* Темний бірюзовий */
+            text-shadow: 0px 0px 8px #45a29e;
+        }
+
+        .news-item p {
+            font-size: 14px;
+            color: #c5c6c7; /* Світло-сірий */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="site-title">Stix</div>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="games.html">🎮 Games</a>
+            <a href="community.html">💬 Community</a>
+            <a href="news.html">📢 News</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+    </div>
+
+    <div class="header">Latest Gaming News</div>
+
+    <div class="news-container">
+        <div class="news-item">
+            <h4>Elden Ring DLC Officially Announced!</h4>
+            <p>Bandai Namco reveals new expansion with fresh bosses, weapons, and areas.</p>
+        </div>
+
+        <div class="news-item">
+            <h4>Skyrim Remastered Mod Hits New Milestone</h4>
+            <p>Fan project brings enhanced graphics and mechanics to the beloved RPG.</p>
+        </div>
+
+        <div class="news-item">
+            <h4>Diablo 3 Season 30 Begins</h4>
+            <p>Blizzard releases balance changes and new legendary items in the latest patch.</p>
+        </div>
+    </div>
+
+</body>
+</html>

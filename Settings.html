@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stix - Settings</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #0b0c10;
+            color: #c5c6c7;
+            display: flex;
+        }
+
+         .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            left: -250px;
+            transition: 0.4s ease-in-out;
+            border-right: 2px solid #66fcf1; /* Неоновий бірюзовий */
+            box-shadow: 0px 0px 20px rgba(102, 252, 241, 0.5);
+        }
+
+        .sidebar:hover {
+            left: 0;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 22px;
+            color: #66fcf1;
+            padding: 15px 0;
+            border-bottom: 1px solid #66fcf1;
+            width: 100%;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .sidebar nav a {
+            color: #66fcf1;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-shadow: 0px 0px 5px #66fcf1;
+        }
+
+        .sidebar nav a:hover {
+            background: #66fcf1;
+            color: black;
+            box-shadow: 0px 0px 10px #66fcf1;
+        }
+
+
+        .content {
+            margin-left: 20px;
+            padding: 30px;
+            width: calc(100% - 20px);
+        }
+
+        .header {
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #66fcf1;
+            border-bottom: 2px solid #66fcf1;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .settings-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .setting-option {
+            background: #1f2833;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #ff0066;
+            transition: 0.3s;
+        }
+
+        .setting-option:hover {
+            background: #ff0066;
+            box-shadow: 0px 0px 15px #ff0066;
+        }
+
+        .setting-option label {
+            font-size: 16px;
+            color: #45a29e;
+            text-shadow: 0px 0px 8px #45a29e;
+        }
+
+        .setting-option input {
+            cursor: pointer;
+        }
+
+        .theme-switch {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .theme-switch button {
+            background: #66fcf1;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .theme-switch button:hover {
+            background: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="sidebar">
+        <div class="site-title">Stix</div>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="games.html">🎮 Games</a>
+            <a href="community.html">💬 Community</a>
+            <a href="news.html">📢 News</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="header">Settings</div>
+
+        <div class="settings-container">
+            <div class="setting-option">
+                <label for="dark-mode">Enable Dark Mode</label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+
+            <div class="setting-option">
+                <label for="notifications">Enable Notifications</label>
+                <input type="checkbox" id="notifications">
+            </div>
+
+            <div class="setting-option">
+                <label for="sound">Enable Sound Effects</label>
+                <input type="checkbox" id="sound">
+            </div>
+
+            <div class="setting-option">
+                <label for="auto-updates">Enable Auto Updates</label>
+                <input type="checkbox" id="auto-updates">
+            </div>
+
+            <div class="setting-option">
+                <label for="privacy-mode">Activate Privacy Mode</label>
+                <input type="checkbox" id="privacy-mode">
+            </div>
+
+            <div class="setting-option">
+                <label for="backup">Auto Backup Settings</label>
+                <input type="checkbox" id="backup">
+            </div>
+
+            <div class="theme-switch">
+                <button onclick="alert('Theme changed!')">Change Theme</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

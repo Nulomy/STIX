@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stix - Community</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: #0b0c10; /* Темний чорний */
+            color: #c5c6c7; /* Світло-сірий */
+        }
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            left: -250px;
+            transition: 0.4s ease-in-out;
+            border-right: 2px solid #66fcf1; /* Неоновий бірюзовий */
+            box-shadow: 0px 0px 20px rgba(102, 252, 241, 0.5);
+        }
+
+        .sidebar:hover {
+            left: 0;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 22px;
+            color: #66fcf1;
+            padding: 15px 0;
+            border-bottom: 1px solid #66fcf1;
+            width: 100%;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .sidebar nav a {
+            color: #66fcf1;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-shadow: 0px 0px 5px #66fcf1;
+        }
+
+        .sidebar nav a:hover {
+            background: #66fcf1;
+            color: black;
+            box-shadow: 0px 0px 10px #66fcf1;
+        }
+
+
+        .header {
+            background: linear-gradient(180deg, #1f2833, #0b0c10);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #66fcf1;
+            border-bottom: 2px solid #66fcf1;
+            text-shadow: 0px 0px 8px #66fcf1;
+        }
+
+        .forum-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .category-btn {
+            background: #1f2833;
+            border: 2px solid #66fcf1;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #c5c6c7;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-shadow: 0px 0px 5px #66fcf1;
+        }
+
+        .category-btn:hover {
+            background: #66fcf1;
+            color: #000;
+            box-shadow: 0px 0px 10px #66fcf1;
+        }
+
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .post {
+            background: #1f2833;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+            border: 2px solid #ff0066; /* Неоновий рожевий */
+        }
+
+        .post:hover {
+            background: #ff0066;
+            box-shadow: 0px 0px 15px #ff0066;
+        }
+
+        .post h4 {
+            font-size: 18px;
+            color: #45a29e; /* Темний бірюзовий */
+            text-shadow: 0px 0px 8px #45a29e;
+        }
+
+        .post p {
+            font-size: 14px;
+            color: #c5c6c7; /* Світло-сірий */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="site-title">Stix</div>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="games.html">🎮 Games</a>
+            <a href="community.html">💬 Community</a>
+            <a href="news.html">📢 News</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+    </div>
+
+
+    <div class="header">Community</div>
+
+    <div class="forum-categories">
+        <button class="category-btn">General Discussion</button>
+        <button class="category-btn">Game Updates</button>
+        <button class="category-btn">Help & Support</button>
+    </div>
+
+    <div class="post-list">
+        <div class="post">
+            <h4>New Elden Ring DLC Announced!</h4>
+            <p>Players are excited for the next big expansion. What do you think?</p>
+        </div>
+
+        <div class="post">
+            <h4>Best Mods for Skyrim?</h4>
+            <p>Share your favorite mods and improvements for the legendary RPG!</p>
+        </div>
+
+        <div class="post">
+            <h4>Diablo 3 Season Update</h4>
+            <p>What's your favorite build for the new season? Let’s discuss strategies!</p>
+        </div>
+    </div>
+
+</body>
+</html>
